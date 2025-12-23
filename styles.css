@@ -1,0 +1,21 @@
+body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e5e5; }
+h1, h2, h3, h4, .font-mono { font-family: 'Space Mono', monospace; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* Animations */
+.fade-in { animation: fadeIn 0.2s ease-out; }
+@keyframes fadeIn { from { opacity: 0; transform: scale(0.98); } to { opacity: 1; transform: scale(1); } }
+
+/* Masonry Grid helper */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .masonry-grid { column-count: 2; }
+}
